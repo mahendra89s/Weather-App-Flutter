@@ -101,10 +101,16 @@ class _firstState extends State<first> {
                               controller: city,
                               decoration: InputDecoration(
                                 focusedBorder: OutlineInputBorder(
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(30.0),
+                                  ),
                                   borderSide: BorderSide(
                                       color: Colors.black, width: 2.0),
                                 ),
                                 enabledBorder: OutlineInputBorder(
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(30.0),
+                                  ),
                                   borderSide: BorderSide(
                                       color: Colors.black, width: 2.0),
                                 ),
