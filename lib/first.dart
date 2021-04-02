@@ -40,7 +40,7 @@ class _firstState extends State<first> {
       });
 
       http.Response response = await http.get(
-          "http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=6d83b76574e05a53b20d75d3bae87c2e");
+          "http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=YOUR_API_FROM_OPENWEATHER");
       var results = jsonDecode(response.body);
 
       setState(() {
