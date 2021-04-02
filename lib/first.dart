@@ -38,7 +38,7 @@ class _firstState extends State<first> {
         lat = position.latitude.toString();
         long = position.longitude.toString();
       });
-
+    //PLEASE USE WEATHER API FROM https://openweathermap.org/api
       http.Response response = await http.get(
           "http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&appid=YOUR_API_FROM_OPENWEATHER");
       var results = jsonDecode(response.body);
